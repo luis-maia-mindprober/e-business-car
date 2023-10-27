@@ -1,0 +1,89 @@
+
+body, html {
+    height: 100%;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 22px;
+}
+.bg {
+    background-image: url('assets/Mediaprobe-Background.png');
+    background-color: #091F30;
+    height: 100%;
+    width: 100%;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.btn-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.logo {
+    max-width: 250px;
+}
+.profile-pic {
+    max-width: 250px;
+}
+.btn-container {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+.btn {
+    margin-bottom: 2%;
+    width: 300px;
+    padding: 15px 25px;
+    display: block;
+    background-color: #43BBC7;
+    color: white;
+}
+.image-cropped-transform {
+    top: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 55%;
+    transform: scale(2) translate(0, 5%);
+}
+
+@media only screen and (max-width: 600px) {
+    body, html {
+        height: 100%;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 22px;
+    }
+    .bg {
+        background-image: url('assets/Mediaprobe-Background.png');
+        background-color: #091F30;
+        height: 100%;
+        width: 100%;
+        background-position: bottom;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .btn-container {
+        text-align: center;
+    }
+    .btn-container .btn {
+        margin: 2%;
+        padding: 15px 25px;
+        font-size: 20px;
+        width: 200px;
+        background-color: #43BBC7;
+        color: white;
+    }
+    .logo {
+        max-width: 200px;
+    }
+    .profile-pic {
+        max-width: 200px;
+    }
+    .image-cropped-transform {
+        top: 0;
+        width: 100%;
+        height: 100%;
+        clip-path: inset(20px 20px 20px 20px);
+    }
+}
